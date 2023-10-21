@@ -92,13 +92,13 @@ import { WechatyBuilder } from 'wechaty'
 import { Ducks }          from 'ducks'
 import {
   WechatyRedux,
-  Api,
+  Duck,
 }                   from 'wechaty-redux'
 
 /**
  * 1. Ducksify Wechaty Redux API
  */
-const ducks = new Ducks({ wechaty: Api })
+const ducks = new Ducks({ wechaty: Duck })
 const store = ducks.configureStore()
 
 /**
